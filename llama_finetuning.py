@@ -233,5 +233,6 @@ def main(**kwargs):
     if not train_config.enable_fsdp or rank==0:
         [print(f'Key: {k}, Value: {v}') for k, v in results.items()]
 
+# let's try to commit
 if __name__ == "__main__":
     fire.Fire(main)
